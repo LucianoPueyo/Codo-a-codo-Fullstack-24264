@@ -1,0 +1,28 @@
+/* Selector Universal */
+* {
+    /*limpiar estilos por defecto*/
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+/* Selectores de etiqueta */
+p {
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Selectores de clase */
+.azul {
+    background-color: blue;
+    color: white;
+}
+
+/* Selectores de id*/
+
+#Parrafo3{
+    background-color: green;
+}

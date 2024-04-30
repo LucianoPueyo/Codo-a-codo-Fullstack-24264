@@ -1,0 +1,66 @@
+/* Selectores simples */
+* {
+    margin: 0;
+    padding :0;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.clase1 {
+    border: 1px solid black;
+}
+
+#Parrafo1 {
+    background-color: blue;
+}
+
+/* Selectores compuestos */
+/* Grupo */
+
+header, main, footer {
+    padding: 15px;
+}
+
+header {
+    background-color: gray;
+}
+
+main {
+}
+
+footer {
+    background-color: lightgray;
+}
+
+section {
+    background-color: chartreuse;
+    border: 1px solid black;
+    height: 200px;
+}
+
+/* Descendiente */
+main section article {
+    background-color: red;
+}
+
+.contenedor {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+/* Hijo directo */
+.contenedor>.contenido {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+h2 + p {
+    background-color: brown;
+}
+
+h3 ~ p {
+    background-color: chocolate;
+}

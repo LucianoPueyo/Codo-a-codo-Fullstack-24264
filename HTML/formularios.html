@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        input, textarea {
+            display: block;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form method="GET" action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="Nombre">Nombre</label>
+            <input id="Nombre" name="name" type="text" value="" maxlength="15" placeholder="Ingrese su nombre" required>
+    
+            <label for="Apellido">Apellido</label>
+            <input id="Apellido" name="lastname" type="text" maxlength="15" placeholder="Ingrese su apellido">
+    
+            <label for="Email">Email</label>
+            <input id="Email" name="mail" type="email" placeholder="ejemplo@gmail.com">
+    
+            <label for="Edad">Edad</label>
+            <input id="Edad" name="age" type="number" min="0" max="99"placeholder="0 a 99">
+            
+            <label for="Nacimiento">Fecha de nacimiento</label>
+            <input id="Nacimiento" name="dateofbirth" type="date">
+    
+            <label for="Password">Contraseña</label>
+            <input id="Password" name="password" type="password" placeholder="Ingrese su contraseña">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Comida Favorita</legend>
+            <label for="Pizza">Pizza</label>
+            <input id="Pizza" name="comida" value="pizza" type="radio">
+    
+            <label for="Empanadas">Empanadas</label>
+            <input id="Empanadas" name="Comida" value="empanadas" type="radio">
+    
+            <label for="Milanesa">Milanesa</label>
+            <input id="Milanesa" name="Comida" value="milanesa" type="radio">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Medios de transporte</legend>
+            <label for="Bici">Bici</label>
+            <input id="Bici" name="Transporte" value="Bici" type="checkbox">
+    
+            <label for="Moto">Moto</label>
+            <input id="Moto" name="Transporte" value="Moto" type="checkbox">
+            
+            <label for="Auto">Auto</label>
+            <input id="Auto" name="Transporte" value="Auto" type="checkbox">
+    
+        </fieldset>
+        
+        <fieldset>
+            <legend>Otros</legend>
+            <label for="Comentarios">Comentarios</label>
+            <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" readonly>Temporalmente deshabilitado</textarea>
+
+            <label for="Turno">Turno</label>
+            <select name="Turno" id="Turno">
+                <option value="Manana">Mañana</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noche">Noche</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Acciones</legend>
+            <input type="reset" value="Limpiar campos">
+            <input type="submit" value="Enviar Formulario">
+        </fieldset>
+    </form>
+</body>
+</html>

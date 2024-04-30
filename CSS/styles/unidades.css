@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+p {
+    width: 200px;
+    height: 50px;
+
+    background-color: blue;
+}
+
+article {
+    border: 1px solid black;
+    width: 210mm;
+    height: 297mm;
+}
+
+div {
+    background-color: green;
+    width: 50%;
+    font-size: 50%;
+}
+
+section {
+    background-color: red;
+    width: 75%;
+    font-size: 50px;
+    color: white;
+}
+
+/*
+    Las propiedades de texto se heredan
+*/
+#Parrafo2 {
+    padding: 1em;
+    font-size: 0.5em;
+}
+
+html {
+    font-size: 20px;
+}
+
+#Parrafo3 {
+    font-size: 0.5rem;
+}
+
+.columna {
+    height: 100vh;
+    display: inline-block;
+}
+
+.fila {
+    height: 50vh;
+    width: 100vw;
+    background-color: blue;
+    /* border: 1px solid white; */
+}

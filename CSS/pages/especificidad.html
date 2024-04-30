@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad</title>
+    <link rel="stylesheet" href="../styles/especificidad.css">
+</head>
+<body>
+    <h1>Especificidad</h1>
+
+    <ol>
+        <li>Universal</li>
+        <li>Etiqueta</li>
+        <li>Clase</li>
+        <li>id</li>
+        <li>Estilos en linea</li>
+    </ol>
+
+    <p>Parrafo 1</p>
+    <p class="azul">Parrafo 2</p>
+    <p id="Parrafo3" class="azul">Parrafo 3</p>
+    <p id="Parrafo4" class="azul" style="background-color: brown;">Parrafo 4</p>
+
+    <section>
+        <article>Articulo 1</article>
+        <article class="cyan">Articulo 2</article>
+        <article id="Articulo3" class="cyan">Articulo 3</article>
+    </section>
+
+    <div>
+        Caja 1
+    </div>
+
+</body>
+</html>

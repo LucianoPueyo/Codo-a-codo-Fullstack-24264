@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/grid.css">
+</head>
+<body>
+    <header id="Inicio">
+        <a href="#Inicio">
+            <img src="../src/img/logo.png" alt="Logo">
+        </a>
+        <h1>Mi página de productos</h1>
+        <a href="#" class="button">Login</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Inicio" class="button">Inicio</a></li>
+            <li><a href="#Productos" class="button">Productos</a></li>
+            <li><a href="#Contacto" class="button">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Productos">
+            <h2>Productos</h2>
+            <section id="Ofertas">
+                <h3>Ofertas</h3>
+                <div class="contenido">
+                    <article>
+                        <img src="../src/img/producto.png" alt="Producto">
+                        <h4>Oferta</h4>
+                        <p>Descripcion de la oferta</p>
+                    </article>
+                    <article>
+                        <img src="../src/img/producto.png" alt="Producto">
+                        <h4>Oferta</h4>
+                        <p>Descripcion de la oferta</p>
+                    </article>
+                    <article>
+                        <img src="../src/img/producto.png" alt="Producto">
+                        <h4>Oferta</h4>
+                        <p>Descripcion de la oferta</p>
+                    </article>
+                    <article>
+                        <img src="../src/img/producto.png" alt="Producto">
+                        <h4>Oferta</h4>
+                        <p>Descripcion de la oferta</p>
+                    </article>
+                </div>
+            </section>
+            <section id="Categorias">
+                <h3>Categorias</h3>
+                <div class="contenido">
+                    <article>Tecnologia</article>
+                    <article>Hogar</article>
+                    <article>Mascotas</article>
+                    <article>Vehiculos</article>
+                    <article>Bebés</article>
+                    <article>Supermercado</article>
+                </div>
+            </section>
+        </section>
+        <section id="Contacto">
+            <h2>Contactanos</h2>
+            <form action="">
+                <label for="Name">Nombre</label>
+                <input type="text" id="Name" name="Name">
+                <label for="Subject">Motivo</label>
+                <input type="text" id="Subject" name="Subject">
+                <label for="Message">Consulta</label>
+                <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                <input class="button" type="reset">
+                <input class="button" type="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Codo a codo 2024 - Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-twitch'></i></a>
+        </div>
+    </footer>
+</body>
+</html>

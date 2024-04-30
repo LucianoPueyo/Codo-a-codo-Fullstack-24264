@@ -1,0 +1,23 @@
+div {
+    width: 100px;
+    height: 100px;
+
+    padding: 15px;
+
+    background-color: red;
+
+    animation-name: CambiarColor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes CambiarColor {
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    100% {background-color: red;}
+}
+
+h1 {
+    opacity: 0.5;
+}

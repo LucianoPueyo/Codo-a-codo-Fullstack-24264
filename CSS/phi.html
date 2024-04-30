@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .proportioned {
+            box-sizing: border-box;
+            border: 1px solid black;
+
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        .proportioned .row-reversed {
+            flex-direction: row-reverse;
+        }
+
+        .proportioned .col-reversed {
+            flex-direction: column-reverse;
+        }
+
+        .proportioned>.first {
+            flex: 8;
+            background-color: blue;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .proportioned>div {
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .proportioned>div>.second {
+            background-color: red;
+            flex: 5;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .proportioned>div>.third {
+            background-color: blueviolet;
+            flex: 3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="proportioned">
+        <article class="first">21</article>
+        <div>
+            <article class="second">13</article>
+            <article class="third">
+                <article class="proportioned row-reversed">
+                    <article class="first">8</article>
+                    <div class="col-reversed">
+                        <article class="second">5</article>
+                        <article class="third">
+                            <article class="proportioned">
+                                <article class="first">3</article>
+                                <div class="">
+                                    <article class="second">2</article>
+                                    <article class="third">1</article>
+                                </div>
+                            </article>
+                        </article>
+                    </div>
+                </article>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

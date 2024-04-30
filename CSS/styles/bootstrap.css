@@ -1,0 +1,9 @@
+main section {
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}
+
+body {
+    background-color: gray;
+}

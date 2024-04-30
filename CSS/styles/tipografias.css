@@ -1,0 +1,20 @@
+@font-face {
+    font-family: saintBartogenia;
+    src: url(../src/fonts/saint_bartogenia/SaintBartogenia_PERSONAL_USE_ONLY.otf);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+article {
+    font-family: "Roboto", sans-serif;
+    font-weight: regular;
+}
+
+section {
+    font-family: saintBartogenia, serif;
+}

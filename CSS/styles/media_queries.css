@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    padding: 25px;
+}
+
+header {
+    background-color: lightgray;
+}
+
+main {
+    min-height: 100vh;
+}
+
+footer {
+    background-color: gray;
+}
+
+.contenedor div {
+    width: 30%;
+    background-color: brown;
+    height: 100px;
+
+    display: inline-block;
+    margin: 15px;
+}
+
+
+@media only screen and (max-width: 600px){
+    header, main, footer {
+        padding:10px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .contenedor div {
+        width: 90%;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    header, main, footer {
+        padding:15px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    header, main, footer {
+        padding:30px;
+    }
+
+    body {
+        font-size: 24px;
+    }
+}

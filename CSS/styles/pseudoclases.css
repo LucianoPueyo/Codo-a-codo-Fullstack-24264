@@ -1,0 +1,52 @@
+.first_last p:first-child {
+    background-color: red;
+}
+
+.first_last p:last-child {
+    background-color: blue;
+}
+
+.nth p:nth-child(2n) {
+    background-color: brown;
+}
+
+.nth p:nth-child(2n+1) {
+    background-color: aquamarine;
+}
+
+.buttons a {
+    text-decoration: none;
+
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+
+    padding: 10px;
+
+    background-color: coral;
+    color: black;
+
+    transition: 0.2s all;
+}
+
+.buttons a:link {
+    color: black;
+}
+
+.buttons a:visited {
+    color: aquamarine;
+}
+
+.buttons a:hover {
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
+.buttons a:active {
+    color: red;
+}
+
+.buttons a:focus {
+   border: 5px solid magenta;
+}

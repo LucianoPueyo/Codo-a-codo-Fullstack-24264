@@ -1,0 +1,10 @@
+i.bxl-facebook-square {
+    color: blue;
+    transition: 0.2s all;
+    font-size: 1em;
+}
+
+i .bxl-facebook-square:hover {
+    color: red;
+    font-size: 2em;
+}

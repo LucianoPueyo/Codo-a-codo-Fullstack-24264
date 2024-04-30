@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <link rel="stylesheet" href="../styles/posicionamiento.css">
+</head>
+<body>
+    <header id="Inicio">
+        <h1>Posicionamiento</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Static</h2>
+        <p>
+            Cuando la propiedad posistion esta en "static" decimos que el elemento
+            "No está posicionado".
+        </p>
+
+        <h2>Absolute</h2>
+        <p>
+            Busca su primer padre posicionado y se desplaza en funcion de este.
+            Si no encuentra ninguno, toma como referencia el body.
+        </p>
+        <section class="contenedor_posicion_absoluta">
+            <article class="posicion_absoluta" style="top:0; left:0;">Articulo 1</article>
+            <article class="posicion_absoluta" style="top:0; right:0;">Articulo 2</article>
+            <article class="posicion_absoluta" style="bottom:0; left:0;">Articulo 3</article>
+            <article class="posicion_absoluta" style="bottom:0; right:0;">Articulo 4</article>
+            <p>Parrafo 1</p>
+            <p>Parrafo 2</p>
+        </section>
+
+        <h2>Relative</h2>
+        <p>
+            posicionar la etiqueta tomando como referencia su lugar original.
+        </p>
+        <section class="contenedor_posicion_relativa">
+            <article class="posicion_relativa">Articulo 5</article>
+        </section>
+
+        <div class="marco">
+            <img src="../src/img/perrito.jpg" alt="">
+        </div>
+
+        <h2>Fixed</h2> 
+        <a href="#Inicio" class="button-up">ir al inicio</a>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+    </footer>
+</body>
+</html>
