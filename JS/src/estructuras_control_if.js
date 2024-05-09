@@ -2,8 +2,6 @@ let a = false; // Tiene titulo
 let b = true; // Mayor de edad
 
 // Puede la persona entrar a Codo a codo?
-
-
 if(a && b) {
     console.log("La persona SI está habilitada para entrar a Cac");
 
