@@ -19,3 +19,21 @@ function calcular_promedio() {
     
     console.log(promedio);
 }
+
+function calculo_iva(costo) {
+    console.log("Calculando costo final:");
+    return costo * 1.21;
+}
+
+let bici = 1000;
+let moto = 5000;
+let auto = 25000;
+
+console.log(calculo_iva(bici));
+console.log(calculo_iva(moto));
+console.log(calculo_iva(auto));
+
+// funciones flecha
+var cuadrado = x => x ** 2;
+
+console.log(cuadrado(4));
