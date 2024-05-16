@@ -33,7 +33,7 @@ console.log(calculo_iva(bici));
 console.log(calculo_iva(moto));
 console.log(calculo_iva(auto));
 
-// funciones flecha
+// funciones flecha (tambien llamadas lambda)
 var cuadrado = x => x ** 2;
 
 console.log(cuadrado(4));

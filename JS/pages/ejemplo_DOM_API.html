@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Manejo del DOM + API</title>
+    <style>
+        main {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        article {
+            background-color: cadetblue;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        article img {
+            border-radius: 999px;
+            width: 100%;
+        }
+        article p {
+            text-align: center;
+        }
+
+        .botonera {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+
+            background-color: red;
+            padding: 15px;
+        }
+
+        #Contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo Manejo del DOM + API</h1>
+
+    <main>
+        <article id="Plantilla">
+            <img src="" alt="">
+            <p></p>
+        </article>
+    
+        <div id="Contenedor"></div>
+    </main>
+    <div class="botonera">
+        <button id="Agregar">Agregar</button>
+        <button id="Quitar">Quitar</button>
+    </div>
+    
+    <script src="../src/ejemplo_DOM_API.js"></script>
+</body>
+</html>
