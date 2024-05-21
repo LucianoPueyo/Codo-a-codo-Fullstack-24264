@@ -1,0 +1,27 @@
+Fullstack
+Frontend + Backend
+
+Base datos Relacionales (PostgreSQL)
+- DBMS 
+- Tablas (información neta)
+  - defino relaciones
+    1 a 1 (Detalle de alumno)
+    1 a n (Docente a Curso)
+    n a n (Alumno a Curso)
+
+ - Clave primaria (Primary Key)
+	Identificador unico dentro de una tabla.
+
+ - Clave Foranea  (Foreign Key)
+	Es un campo dentro de una tabla que referencia a una primary key.
+
+
+- Cliente de base de datos (PGAdmin) | SQL
+  Denfinir estructuras (tablas)
+  Manipular la informacion
+      agregar
+      modificar
+      borrar
+  Consultar datos (Query)
+
+
