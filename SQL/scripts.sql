@@ -26,7 +26,6 @@ CREATE TABLE Curso (
     FOREIGN KEY (docente_id) REFERENCES Docente (id) ON DELETE SET NULL
 );
 
--- Crear tabla Inscripcion (relación muchos-a-muchos entre Alumno y Curso)
 CREATE TABLE Inscripcion (
     id SERIAL PRIMARY KEY,
     alumno_id INT NOT NULL,
@@ -36,8 +35,6 @@ CREATE TABLE Inscripcion (
     FOREIGN KEY (curso_id) REFERENCES Curso (id) ON DELETE CASCADE,
     UNIQUE (alumno_id, curso_id) -- para evitar duplicados de inscripción
 );
-
-----------------------
 
 -- Insertar datos en la tabla Alumno
 INSERT INTO Alumno (nombre, apellido, dni) VALUES 
@@ -83,3 +80,23 @@ INSERT INTO Inscripcion (alumno_id, curso_id, fecha_inscripcion) VALUES
 (8, 3, '2024-01-17'),
 (9, 3, '2024-01-18'),
 (10, 3, '2024-01-19');
+
+-- Borrar registros
+/*
+DELETE FROM Alumno WHERE id = 1;
+
+DELETE FROM Docente WHERE id = 1;
+
+DELETE FROM Curso WHERE id = 1;
+
+DELETE FROM Inscripcion WHERE id = 1;
+*/
+
+SELECT * 
+FROM alumno;
+
+SELECT * 
+FROM alumno
+where nombre = 'Ana';
+
+select id, apellido from alumno;
