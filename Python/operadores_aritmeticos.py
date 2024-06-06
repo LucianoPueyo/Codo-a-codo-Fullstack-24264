@@ -1,9 +1,9 @@
 # Aritmeticos
-print(7 + 8)
-print(3 - 5)
-print(3 * 4)
-print(7 / 5)
+print(7 + 8) # suma
+print(3 - 5) # Resta
+print(3 * 4) # Multiplicacion
 
+print(7 / 5) # Division real
 print(7 // 5) # Division entera
 print(5 % 2) # Resto de la division
 
