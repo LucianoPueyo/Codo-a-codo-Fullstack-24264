@@ -46,3 +46,23 @@ def test_connection():
     
     cur.close() 
     conn.close()
+
+def create_table_tareas():
+    conn = psycopg2.connect(**DATABASE_CONFIG)
+    cur = conn.cursor()
+    cur.execute(
+        """
+        CREATE TABLE IF NOT EXISTS Tareas (
+            id SERIAL PRIMARY KEY,
+            nombre VARCHAR(50) NOT NULL,
+            descripcion VARCHAR(300) NOT NULL,
+            fecha_creacion DATE NOT NULL,
+            completada BOOLEAN NOT NULL,
+            activa BOOLEAN NOT NULL
+        );
+        """
+    )
+    conn.commit()
+   
+    cur.close()
+    conn.close()

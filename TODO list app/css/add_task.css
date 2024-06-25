@@ -1,0 +1,56 @@
+main {
+    h2 {
+        a {
+            color: var(--secondary);
+            font-size: 0.75em;
+
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            color: var(--main);
+        }
+    }
+
+    .tareas {
+        justify-content: center;
+
+        .tarea{
+            form {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                input {
+                    background-color: rgba(0,0,0,0.1);
+                    border: none;
+
+                    padding: var(--min-padding);
+                    width: 100%;
+
+                    font-size: 1.17em;
+                    
+                    @media only screen and (max-width: 600px) {
+                        font-size: 1em;
+                    }
+
+                    font-weight: 400;
+                }
+
+                textarea{
+                    resize: none;
+                    background-color: rgba(0,0,0,0.1);
+                    border: none;
+
+                    font-size: 16px;
+
+                    @media only screen and (max-width: 600px) {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}

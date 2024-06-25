@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Lista de Tareas 1.0</title>
+    <link rel="shortcut icon" href="resources/ico/logo.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="light-background">
+        <h1>
+            Mi Lista <br>
+            de tareas <br>
+            pendientes
+        </h1>
+    </header>
+
+    <main class="dark-background">
+        <h2 id="TareasPendientes">
+            Mis Tareas<br> 
+            <button type="menu" id="VerPendientes" class="headerActionButton active" title="Ver todas las tareas pendientes">Pendientes</button>
+            <button type="menu" id="VerCompletadas" class="headerActionButton" title="Ver todas las tareas Completadas">Completadas</button>
+            <button type="menu" id="VerArchivadas" class="headerActionButton" title="Ver todas las tareas Archivadas">Archivadas</button>
+        </h2>
+        <section class="tareas">
+            <div class="tareas-container">
+                <article class="tarea chanfle pendiente template">
+                    <h3>
+                        <span class="titulo">Tarea 1</span>
+                    </h3>
+                    <hr>
+                    <p class="descripcion">
+                        Descripcion tarea pendiente
+                    </p>
+                    <div class="acciones">
+                        <button id="Archivar" title="Archivar"><i class='bx bxs-message-square-x' ></i></button>
+                        <button id="Editar" title="Editar"><i class='bx bxs-message-square-edit' ></i></button>
+                        <button id="Completar" title="Completar"><i class='bx bxs-message-square-check'></i></button>
+                    </div>
+                    <span class="fecha" title="Fecha de creación">19/12/24</span>
+                    <input type="hidden" name="task_id" class="task_id">
+                </article>
+                <article class="tarea chanfle completada template">
+                    <h3>
+                        <span class="titulo">Tarea 2</span>
+                        <span class="detalle">(Completada)</span>
+                    </h3>
+                    <hr>
+                    <p class="descripcion">
+                        Descripcion tarea completada
+                    </p>
+                    <div class="acciones">
+                        <button id="Archivar" title="Archivar"><i class='bx bxs-message-square-x' ></i></button>
+                        <button id="Pendiente" title="Marcar como pendiente"><i class='bx bxs-door-open'></i></button>
+                    </div>
+                    <span class="fecha" title="Fecha de creación">19/12/24</span>
+                    <input type="hidden" name="task_id" class="task_id">
+                </article>
+                <article class="tarea chanfle archivada template">
+                    <h3>
+                        <span class="titulo">Tarea 2</span>
+                        <span class="detalle">(Archivada)</span>
+                    </h3>
+                    <hr>
+                    <p class="descripcion">
+                        Descripcion tarea archivada
+                    </p>
+                    <div class="acciones">
+                        <button id="Pendiente" title="Marcar como pendiente"><i class='bx bxs-door-open'></i></button>
+                    </div>
+                    <span class="fecha" title="Fecha de creación">19/12/24</span>
+                    <input type="hidden" name="task_id" class="task_id">
+                </article>
+            </div>
+            <article class="tarea agregar">
+                <a href="pages/add_update_task.html" class="accion">
+                    <i class='bx bxs-message-square-add'></i>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="animated">
+        <p class="firma">
+            TODO List V1.0 <br>
+            Codo a Codo <br>
+            1er Cuatrimestre 2024
+        </p>
+        <ul class="sociales">
+            <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="js/fetchData.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

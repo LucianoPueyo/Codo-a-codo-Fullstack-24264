@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Tarea - Mi Lista de Tareas 1.0</title>
+    
+    <link rel="shortcut icon" href="../resources/ico/logo.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/add_task.css">
+</head>
+<body>
+    <main class="dark-background">
+        <h2 id="TareasPendientes"><span class="actionTitle">Agregar nueva tarea</span><br>
+            <a href="../index.html#TareasPendientes">Cancelar</a>
+        </h2>
+        <section class="tareas">
+            <div class="tareas-container">
+                <article class="tarea pendiente chanfle">
+                    <form id="Formulario" method="POST">
+                        <input type="text" id="Titulo" name="Titulo" placeholder="Título" required>
+                        <hr>
+                        <textarea name="descripcion" id="Descripcion" class="descripcion" placeholder="Descripción" required></textarea>
+                        <div class="acciones">
+                            <a href="../index.html#TareasPendientes" id="Cancelar" title="Cancelar"><i class='bx bxs-message-square-x' ></i></a>
+                            <button type="button" id="Crear" title="Crear"><i class='bx bxs-message-square-check'></i></button>
+                        </div>
+                        <span class="fecha" title="Fecha de creación"></span>
+                        <input id="task_id" type="hidden" name="task_id">
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="firma">
+            TODO List V1.0 <br>
+            Codo a Codo <br>
+            1er Cuatrimestre 2024
+        </p>
+        <ul class="sociales">
+            <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../js/fetchData.js"></script>
+    <script src="../js/add_update_task.js"></script>
+</body>
+</html>
